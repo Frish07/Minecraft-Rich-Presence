@@ -29,7 +29,7 @@ dependencies {
 
 jar {
     from("LICENSE") {
-        rename { "${it}_${project.name}" }
+        rename("LICENSE", "LICENSE_${project.name}")
     }
     from("THIRD_PARTY_NOTICES.md") {
         into("META-INF")
