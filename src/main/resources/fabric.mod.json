@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "minecraft_rich_presence",
+  "version": "${version}",
+  "name": "Minecraft Rich Presence",
+  "description": "Displays your Minecraft session in Discord Rich Presence.",
+  "authors": [
+    "Frish07"
+  ],
+  "contact": {
+    "sources": "https://github.com/Frish07/Minecraft-Rich-Presence"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.frish07.richpresence.MinecraftRichPresence"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
